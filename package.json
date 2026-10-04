@@ -1,0 +1,49 @@
+{
+  "name": "agent-blast-radius",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A local, synthetic training simulation showing how an autonomous AI agent's blast radius grows without runtime controls, and how identity, egress, secrets, monitoring and a circuit breaker contain it.",
+  "keywords": [
+    "ai-agent",
+    "ai-safety",
+    "agent-security",
+    "runtime-controls",
+    "opentelemetry",
+    "prompt-injection",
+    "guardrails"
+  ],
+  "scripts": {
+    "dev": "next dev -H 127.0.0.1",
+    "build": "next build",
+    "start": "next start -H 127.0.0.1",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm run lint && npm run test"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.128.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^13.4.1",
+    "jose": "^6.2.12",
+    "lucide-react": "^1.47.0",
+    "next": "16.3.6",
+    "radix-ui": "^1.6.7",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "tailwind-merge": "^3.7.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^24.13.6",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.6",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vitest": "^5.0.1"
+  }
+}
